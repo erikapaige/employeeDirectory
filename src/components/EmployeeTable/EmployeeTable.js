@@ -5,6 +5,7 @@ import { Table } from 'reactstrap'
 
 
 const EmployeeTable = props => {
+
   return(
     <Table>
       <thead>

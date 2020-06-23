@@ -16,12 +16,12 @@ class App extends Component {
     //properties on JSON
       //id
       //first_name
-      //last_name"
-      //department"
-      //job_title"
+      //last_name
+      //department
+      //job_title
       //email
       //phone_number
-  }
+}
 
   // grab value by text input
   handleInputChange = event => {
@@ -45,12 +45,18 @@ class App extends Component {
     return (
       <>
         <h1>Employee Directory</h1>
-        <Search />
+        <Search 
+          id={this.state.id}
+          first_name={this.state.first_name}
+          last_name={this.state.last}
+          department={this.state.department}
+          job_title={this.state.job_title}
+          email={this.state.email}
+          phone_number={this.state.phone_number}
+          handleInputChange={this.handleInputChange}
+          handleSubmit={this.handleSubmit}/>
         <hr />
-        <EmployeeTable />
-        {/* {
-          this.state.employees.map(employee => <EmployeeTable employee={employee}/> )
-        } */}
+        <EmployeeTable employees={employees}/>
         <EmployeeCard employee={this.state.employees}/>
       </>
     )

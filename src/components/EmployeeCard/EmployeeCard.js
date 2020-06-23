@@ -10,7 +10,9 @@ import {
   from 'reactstrap'
 
 const EmployeeCard = props => {
+  // console log props to confirm the key values on object
   console.log(props)
+
   return(
     <div>
       <Card>
