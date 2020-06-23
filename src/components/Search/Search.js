@@ -9,6 +9,9 @@ import { Button,
   from 'reactstrap'
 
 const Search = props => {
+  // props is undefined but data appears
+  // console.log(props)
+
   return(
     <>
       <Form inline>
@@ -17,11 +20,13 @@ const Search = props => {
           <Input
             type="employee"
             name="employee"
-            // id="" 
+            id="employee" 
             placeholder="Enter Search Criteria..."
-            onChange={props.handleInputChange} />
+            onChange={props.handleInputChange}
+            // value={props.state.value} 
+            />
         </FormGroup>
-        <Button onClick={props.handleSearchBtn}>Search</Button>
+        <Button onClick={props.handleSubmit}>Search</Button>
       </Form>
     </>
   )

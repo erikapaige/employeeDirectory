@@ -1,12 +1,11 @@
 // bring in React and 'component' constructor to use smart components
 import React, { Component } from 'react'
 // bring in array of employees
-import employees from "./employees.json"
+import employees from "./employees"
 // bring in individual components 
 import EmployeeTable from './components/EmployeeTable/EmployeeTable'
 import Search from './components/Search'
 import EmployeeCard from './components/EmployeeCard'
-
 
 class App extends Component {
   
@@ -21,23 +20,29 @@ class App extends Component {
       //job_title
       //email
       //phone_number
-}
+    }
 
   // grab value by text input
   handleInputChange = event => {
     this.setState({ [event.target.name]: event.target.value })
   }
 
-  // grab value by text input
-  // handleSearchInput = event => {
-  //   this.setState({ [event.target.name]: event.target.value })
-  // }
-
   // grab value from text input and create card
   handleSubmit = event => {
-    // event.preventDefault()
-    console.log('ping')
+    event.preventDefault()
+    // console.log('ping')
 
+    this.setState({
+      employees:{
+       id: this.state.id,
+       first_name: this.state.first_name,
+       last_name: this.state.last_name,
+       department: this.state.department,
+       job_title:this.state.job_title,
+       email: this.state.email,
+       phone_number: this.state.phone_number
+      }
+    })
   }
 
   // return JSX
@@ -56,7 +61,7 @@ class App extends Component {
           handleInputChange={this.handleInputChange}
           handleSubmit={this.handleSubmit}/>
         <hr />
-        <EmployeeTable employees={employees}/>
+        <EmployeeTable />
         <EmployeeCard employee={this.state.employees}/>
       </>
     )
