@@ -12,6 +12,7 @@ class EmployeeTable extends Component {
         <Table>
           <thead>
             <tr>
+              <th></th>
               <th>ID</th>
               <th>Last Name</th>
               <th>First Name</th>
@@ -26,8 +27,8 @@ class EmployeeTable extends Component {
               <tr>
                 <th scope="row"></th>
                   <td>{employeeDetail.id}</td>
-                  <td>{employeeDetail.first_name}</td>
                   <td>{employeeDetail.last_name}</td>
+                  <td>{employeeDetail.first_name}</td>
                   <td>{employeeDetail.department}</td>
                   <td>{employeeDetail.job_title}</td>
                   <td>{employeeDetail.email}</td>
