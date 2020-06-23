@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "//erikapaige.github.io/employeeDirectory/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "//erikapaige.github.io/employeeDirectory/static/js/main.b464dc3f.chunk.js",
+    "main.js.map": "//erikapaige.github.io/employeeDirectory/static/js/main.b464dc3f.chunk.js.map",
+    "runtime-main.js": "//erikapaige.github.io/employeeDirectory/static/js/runtime-main.8b7d0e82.js",
+    "runtime-main.js.map": "//erikapaige.github.io/employeeDirectory/static/js/runtime-main.8b7d0e82.js.map",
+    "static/css/2.af3c1da9.chunk.css": "//erikapaige.github.io/employeeDirectory/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.e75a6748.chunk.js": "//erikapaige.github.io/employeeDirectory/static/js/2.e75a6748.chunk.js",
+    "static/js/2.e75a6748.chunk.js.map": "//erikapaige.github.io/employeeDirectory/static/js/2.e75a6748.chunk.js.map",
+    "index.html": "//erikapaige.github.io/employeeDirectory/index.html",
+    "precache-manifest.c8c6b771c79a3b8035a2979af8cff1ca.js": "//erikapaige.github.io/employeeDirectory/precache-manifest.c8c6b771c79a3b8035a2979af8cff1ca.js",
+    "service-worker.js": "//erikapaige.github.io/employeeDirectory/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "//erikapaige.github.io/employeeDirectory/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "//erikapaige.github.io/employeeDirectory/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.e75a6748.chunk.js.LICENSE.txt": "//erikapaige.github.io/employeeDirectory/static/js/2.e75a6748.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b7d0e82.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.e75a6748.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.b464dc3f.chunk.js"
+  ]
+}
