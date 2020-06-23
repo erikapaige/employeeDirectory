@@ -2,9 +2,10 @@
 import React, { Component } from 'react'
 // bring in array of employees
 import employees from "./employees.json"
+// bring in individual components 
 import EmployeeTable from './components/EmployeeTable/EmployeeTable'
 import Search from './components/Search'
-import EmployeeCard from './components/EmployeeCard/EmployeeCard'
+import EmployeeCard from './components/EmployeeCard'
 
 
 class App extends Component {
@@ -22,21 +23,35 @@ class App extends Component {
       //phone_number
   }
 
+  // grab value by text input
   handleInputChange = event => {
-    //variable need value as string place [] around it to be use as key
     this.setState({ [event.target.name]: event.target.value })
   }
 
+  // grab value by text input
+  // handleSearchInput = event => {
+  //   this.setState({ [event.target.name]: event.target.value })
+  // }
+
+  // grab value from text input and create card
+  handleSubmit = event => {
+    // event.preventDefault()
+    console.log('ping')
+
+  }
 
   // return JSX
   render() {
     return (
       <>
-      <h1>Employee Directory</h1>
-      <Search />
-      <hr />
-      <EmployeeTable />
-      <EmployeeCard />
+        <h1>Employee Directory</h1>
+        <Search />
+        <hr />
+        <EmployeeTable />
+        {/* {
+          this.state.employees.map(employee => <EmployeeTable employee={employee}/> )
+        } */}
+        <EmployeeCard employee={this.state.employees}/>
       </>
     )
   }

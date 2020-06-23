@@ -8,19 +8,22 @@ import { Button,
   Input } 
   from 'reactstrap'
 
-const Search = () => {
+const Search = props => {
   return(
-    <Form inline>
-      <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-        <Label for="examplePassword" className="mr-sm-2"></Label>
-        <Input 
-          type="password" 
-          name="password" 
-          id="examplePassword" 
-          placeholder="Enter Search Criteria..." />
-      </FormGroup>
-      <Button>Search</Button>
-    </Form>
+    <>
+      <Form inline>
+        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+          <Label htmlFor="employee" className="mr-sm-2"></Label>
+          <Input
+            type="employee"
+            name="employee"
+            // id="" 
+            placeholder="Enter Search Criteria..."
+            onChange={props.handleInputChange} />
+        </FormGroup>
+        <Button onClick={props.handleSearchBtn}>Search</Button>
+      </Form>
+    </>
   )
 }
 

@@ -3,7 +3,8 @@ import React from 'react'
 // bring in Table component form Reactstrap
 import { Table } from 'reactstrap'
 
-const EmployeeTable = () => {
+
+const EmployeeTable = props => {
   return(
     <Table>
       <thead>

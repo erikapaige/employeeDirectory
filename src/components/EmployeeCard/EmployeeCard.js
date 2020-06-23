@@ -3,28 +3,27 @@ import React from 'react'
 // bring in components form Reactstrap
 import {
   Card, 
-  Button, 
   CardHeader, 
   CardBody, 
-  CardText,
   ListGroup,
   ListGroupItem } 
   from 'reactstrap'
 
-const EmployeeCard = () => {
+const EmployeeCard = props => {
+  console.log(props)
   return(
     <div>
       <Card>
         <CardHeader>Header</CardHeader>
         <CardBody>
           <ListGroup>
-            <ListGroupItem>ID: </ListGroupItem>
-            <ListGroupItem> Last Name: </ListGroupItem>
-            <ListGroupItem> First Name: </ListGroupItem>
-            <ListGroupItem> Department: </ListGroupItem>
-            <ListGroupItem>Job Title: </ListGroupItem>
-            <ListGroupItem>Email: </ListGroupItem>
-            <ListGroupItem>Phone Number: </ListGroupItem>
+            <ListGroupItem>ID:{props.employee.id}</ListGroupItem>
+            <ListGroupItem> Last Name:{props.employee.last_name}</ListGroupItem>
+            <ListGroupItem> First Name:{props.employee.first_name} </ListGroupItem>
+            <ListGroupItem> Department:{props.employee.department} </ListGroupItem>
+            <ListGroupItem>Job Title:{props.employee.job_title} </ListGroupItem>
+            <ListGroupItem>Email:{props.employee.email} </ListGroupItem>
+            <ListGroupItem>Phone Number:{props.employee.phone_number}</ListGroupItem>
           </ListGroup>
         </CardBody>
       </Card>
