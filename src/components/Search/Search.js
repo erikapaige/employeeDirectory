@@ -23,7 +23,7 @@ const Search = props => {
             id="employee" 
             placeholder="Enter Search Criteria..."
             onChange={props.handleInputChange}
-            // value={props.state.value} 
+            value={props.first_name} 
             />
         </FormGroup>
         <Button onClick={props.handleSubmit}>Search</Button>

@@ -16,7 +16,7 @@ const EmployeeCard = props => {
   return(
     <div>
       <Card>
-        <CardHeader>Header</CardHeader>
+        <CardHeader>Employee Data</CardHeader>
         <CardBody>
           <ListGroup>
             <ListGroupItem>ID:{props.employee.id}</ListGroupItem>

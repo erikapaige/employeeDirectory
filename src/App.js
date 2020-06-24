@@ -11,6 +11,7 @@ class App extends Component {
   
   state = {
     // setting this.state.employees to employees json array
+    first_name:'',
     employees
     //properties on JSON
       //id
@@ -60,9 +61,9 @@ class App extends Component {
           phone_number={this.state.phone_number}
           handleInputChange={this.handleInputChange}
           handleSubmit={this.handleSubmit}/>
+          {this.state.first_name ? <EmployeeCard employeeCard={this.state.first_name} /> : null}  
         <hr />
         <EmployeeTable />
-        <EmployeeCard employee={this.state.employees}/>
       </>
     )
   }
