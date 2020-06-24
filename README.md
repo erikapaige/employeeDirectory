@@ -1,4 +1,4 @@
-# progressiveBudget
+# employeeDirectory
 The 'Employee Directory' is an application that allows users to view a full list of their employees. 
 
 ![Last Graphic](/public/img/employeeDirectory.png)
