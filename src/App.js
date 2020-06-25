@@ -8,7 +8,9 @@ import Search from './components/Search'
 import EmployeeCard from './components/EmployeeCard'
 
 class App extends Component {
-  
+  componentDidMount(){
+    console.log(EmployeeTable)
+  }
   state = {
     // setting this.state.employees to employees json array
     first_name:'',

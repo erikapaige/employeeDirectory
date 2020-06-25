@@ -10,7 +10,7 @@ import { Button,
 
 const Search = props => {
   // props is undefined but data appears
-  // console.log(props)
+  // console.log(ping)
 
   return(
     <>
