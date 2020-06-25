@@ -9,7 +9,7 @@ import EmployeeCard from './components/EmployeeCard'
 
 class App extends Component {
   componentDidMount(){
-    console.log(EmployeeTable)
+    console.log(EmployeeTable.employee)
   }
   state = {
     // setting this.state.employees to employees json array
